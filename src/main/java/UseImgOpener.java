@@ -13,6 +13,5 @@ public class UseImgOpener
 		final ImgOpener o = new ImgOpener();
 		final SCIFIOImgPlus img = o.openImg( fn );
 		img.cursor().next();
-		System.out.println( "done" );
 	}
 }
