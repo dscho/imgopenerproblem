@@ -11,10 +11,18 @@
 		<version>2.0.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>imgopenerproblem</artifactId>
+	<artifactId>imgopener_problem</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 
+	<properties>
+	    <scifio.version>0.10.1</scifio.version>
+	</properties>
+
 	<dependencies>
+		<dependency>
+			<groupId>net.imglib2</groupId>
+			<artifactId>imglib2</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>net.imglib2</groupId>
 			<artifactId>imglib2</artifactId>
@@ -23,7 +31,12 @@
 			<groupId>io.scif</groupId>
 			<artifactId>scifio</artifactId>
 		</dependency>
-<!--	
+		<dependency>
+			<groupId>${imagej.groupId}</groupId>
+			<artifactId>ij</artifactId>
+			<version>${imagej1.version}</version>
+		</dependency>
+<!--
 		<dependency>
 			<groupId>sc.fiji</groupId>
 			<artifactId>SPIM_Registration</artifactId>
