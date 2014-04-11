@@ -8,7 +8,7 @@ public class ImgOpenerProblem implements PlugIn
 	{
 		try
 		{
-			UseImgOpener.useImgOpener( "/Users/pietzsch/Downloads/HisYFP-SPIM/spim_TL18_Angle0.lsm" );
+			UseImgOpener.main( new String[0] );
 		}
 		catch ( final Exception e )
 		{
