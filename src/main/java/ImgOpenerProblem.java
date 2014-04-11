@@ -1,3 +1,4 @@
+import ij.IJ;
 import ij.plugin.PlugIn;
 
 public class ImgOpenerProblem implements PlugIn
@@ -11,8 +12,7 @@ public class ImgOpenerProblem implements PlugIn
 		}
 		catch ( final Exception e )
 		{
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			IJ.handleException( e );
 		}
 	}
 }
